@@ -1,0 +1,5 @@
+# ignore pat file as there are too many of them
+data/pat/
+
+# ingore this file as it seems to be too big
+cpg_index_to_pos.tsv

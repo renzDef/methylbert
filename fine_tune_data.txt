@@ -1,0 +1,9 @@
+../data/bam_for_fine_tuning/GSM5652176_Adipocytes-Z000000T7.bam	0
+../data/bam_for_fine_tuning/GSM5652176_Adipocytes-Z000000T7.hg38.bam	0
+../data/bam_for_fine_tuning/GSM5652177_Adipocytes-Z000000T9.bam	0
+../data/bam_for_fine_tuning/GSM5652177_Adipocytes-Z000000T9.hg38.bam	0
+../data/bam_for_fine_tuning/GSM5652178_Adipocytes-Z000000T5.bam	0
+../data/bam_for_fine_tuning/GSM5652178_Adipocytes-Z000000T5.hg38.bam	0
+../data/bam_for_fine_tuning/GSM5652179_Aorta-Endothel-Z00000422.bam	1
+../data/bam_for_fine_tuning/GSM5652179_Aorta-Endothel-Z00000422.hg38.bam	1
+../data/bam_for_fine_tuning/GSM5652180_Aorta-Endothel-Z0000043G.hg38.bam	1
