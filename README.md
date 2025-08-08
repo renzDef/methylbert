@@ -37,13 +37,14 @@ python pat_to_sam.py ../data/pat/name_of_pat_file.pat ../data/reference/cpg_site
 - cell_types.tsv: List of all names of cell types and the class
 - cpg_index_to_pos.tsv: I forgot what I used that for, probably in the process of getting the DMR data. Will check and remove if useless now.
 
-## Conda env
+## Installation
 
-to recreate the conda environment, run the following code in the `methylbert` folder:
+### Conda
+
+To recreate the conda environment, run the following code in the `methylbert` folder:
 
 ```
 conda env create -f env_config.yml -n methylbert
 
 ```
-
 After this you should be able to run all python files.
