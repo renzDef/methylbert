@@ -39,6 +39,11 @@ python pat_to_sam.py ../data/pat/name_of_pat_file.pat ../data/reference/cpg_site
 
 ## Conda env
 
-I wanted to add some explanations which packages need to be isntalled and so on. Will add when I have time, bacause I need to check which of the stuff I installed really is important. For starters, it's good to follow the MethylBERT installation tutorial.
+to recreate the conda environment, run the following code in the `methylbert` folder:
 
+```
+conda env create -f env_config.yml -n methylbert
 
+```
+
+After this you should be able to run all python files.

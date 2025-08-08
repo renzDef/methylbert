@@ -20,6 +20,7 @@ from methylbert.trainer import MethylBertFinetuneTrainer
 import os
 import pandas as pd
 from methylbert.deconvolute import deconvolute
+from transformers import AutoModel
 
 ''' This part preprosses the tumor and normal data later used for fine tuning the model.
     The output files are seq_train.csv, seq_test.csv and dmrs.csv.
@@ -30,7 +31,7 @@ from methylbert.deconvolute import deconvolute
 torch.multiprocessing.set_sharing_strategy('file_system')
 print("Fine Tuning start...")
 
-f_bam_file_list = "fine_tune_data.txt"
+f_bam_file_list = "../fine_tune_data.txt"
 f_dmr = "../data/reference/dmr.csv"
 f_ref = "../data/reference/hg38.fa"
 out_dir = "tmp/"
@@ -48,7 +49,7 @@ fdg.finetune_data_generate(
 # This part is for fine tuning the model.
 
 set_seed(42)
-seq_len=150
+seq_len=100
 n_mers=3
 batch_size=5
 num_workers=0
@@ -96,7 +97,6 @@ trainer.load("hanyangii/methylbert_hg19_2l") # alternative numbers of encoder bl
 
 print("[6/8] Loaded model into trainer.")
 
-print(trainer.model)
 ''' Training produces the following files in the tmp/fine_tune/ directory.
 
     config.json and pytorch_model.bin: model configuration and the trained MethylBERT model
